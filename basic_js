@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<p id="abc">blah blah blah</p>
+<h1 onclick="this.innerHTML='text changed'"> click on this text!</h1><br />
+<button onclick="this.innerHTML=Date()">Time?</button>
+<br />
+<script>
+var myelement=document.getElementById('abc');
+myelement.style.color="yellow";
+var age=prompt("Please enter your age");
+var a =22;
+var b=3;
+var add=a+b;
+document.write("User age is:"+age+"<br />");
+function myFunction(){
+var x =document.getElemntById("firstname");
+x.value=x.value.toUpperCase();
+}
+</script>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The date is?</button>
+<p id="demo">Now in this place time will be displayed</p><br />
+Enter your name:<input type="text" id="firstname" onchange="myFunction()">
+<p> When you leave th einput field, a function is triggered ehich transform s the input to upper case.</p>
+</body>
+</html>
